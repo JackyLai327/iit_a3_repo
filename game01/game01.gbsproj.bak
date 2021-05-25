@@ -1051,16 +1051,6 @@
                     "frame": 1,
                     "script": [
                         {
-                            "id": "a37ccee2-531e-4dc0-98c9-7afd55481813",
-                            "command": "EVENT_TEXT",
-                            "args": {
-                                "text": [
-                                    "hey bitch, go slay\nsome arses"
-                                ],
-                                "avatarId": ""
-                            }
-                        },
-                        {
                             "id": "3d9c229f-84e9-4281-b7b9-8a9bafa32519",
                             "command": "EVENT_END"
                         }
@@ -7254,6 +7244,34 @@
                             "command": "EVENT_END"
                         }
                     ]
+                },
+                {
+                    "name": "",
+                    "trigger": "walk",
+                    "script": [
+                        {
+                            "id": "33411f96-fc43-4cae-b443-319319b65de7",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "There are too many\ndemons here!\n(press Z or A)",
+                                    "They have been\nkilling people!\n(press Z or A)",
+                                    "Use X or B\nto fire and kill\nthe demons!",
+                                    "Save your family!\nSave the world!\n..."
+                                ],
+                                "avatarId": ""
+                            }
+                        },
+                        {
+                            "id": "ee1e64cc-fd38-40ea-8902-751e016ed9b1",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "id": "c8dfed77-7b00-44e8-b3c7-92a1770f473c",
+                    "x": 27,
+                    "y": 26,
+                    "width": 1,
+                    "height": 1
                 }
             ],
             "script": [
@@ -7278,28 +7296,7 @@
                         "minValue": "0",
                         "maxValue": "255",
                         "clamp": false,
-                        "__collapse": true
-                    }
-                },
-                {
-                    "id": "52835dae-da08-4642-b36d-eac47cbafbbe",
-                    "command": "EVENT_TEXT",
-                    "args": {
-                        "text": [
-                            "Before we start, \nYou can choose\nyour avatar!"
-                        ],
-                        "avatarId": ""
-                    }
-                },
-                {
-                    "id": "da9a1647-4090-4282-89a4-6077f94dc0a8",
-                    "command": "EVENT_CHOICE",
-                    "args": {
-                        "variable": "4",
-                        "trueText": "Z for Boy",
-                        "falseText": "X for Girl",
-                        "__collapse": false,
-                        "__label": "ask gender"
+                        "__collapse": false
                     }
                 },
                 {
@@ -7378,6 +7375,21 @@
                                 "command": "EVENT_END"
                             }
                         ]
+                    }
+                },
+                {
+                    "id": "4e55d174-f852-4008-ba71-ffdd063a0d4c",
+                    "command": "EVENT_TEXT",
+                    "args": {
+                        "text": [
+                            "Huh...?\n\n(press Z or A)",
+                            "Where am I...",
+                            "I only know I was\nchopping woods...\nand... and...",
+                            "AH! I got hit by a\nbranch! I must\nhave passed out!",
+                            "But this place...\nIt's so scary...",
+                            "I better go check\nout the sign over\nthere..."
+                        ],
+                        "avatarId": ""
                     }
                 },
                 {
@@ -15192,7 +15204,8 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "I SAID FUCK OFF!"
+                                    "HAHAHAHHAHHAHHAHA!\nFOOL!",
+                                    "Your children are\ntaken away by the\ndemon king..."
                                 ],
                                 "avatarId": ""
                             }
@@ -15260,10 +15273,10 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "Get the fuck out,\nwill ya?"
+                            "Maybe he is\nnicer than the\nothers..."
                         ],
                         "avatarId": "",
-                        "__collapse": true
+                        "__collapse": false
                     }
                 },
                 {
@@ -15289,7 +15302,7 @@
                     "args": {
                         "musicId": "adbc637a-1c1b-427c-b496-466a0c01d1c9",
                         "loop": true,
-                        "__collapse": false
+                        "__collapse": true
                     }
                 },
                 {
@@ -15307,10 +15320,32 @@
                             "start"
                         ],
                         "persist": false,
-                        "__scriptTabs": "press"
+                        "__scriptTabs": "press",
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
+                            {
+                                "id": "31745bc7-1a89-469f-823a-a75f2c1735ff",
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Before we start, \nYou can choose\nyour avatar!"
+                                    ],
+                                    "avatarId": ""
+                                }
+                            },
+                            {
+                                "id": "1aa8681f-5374-450f-9a60-761d9d51338e",
+                                "command": "EVENT_CHOICE",
+                                "args": {
+                                    "variable": "4",
+                                    "trueText": "Z for Boy",
+                                    "falseText": "X for Girl",
+                                    "__collapse": false,
+                                    "__label": "ask gender"
+                                }
+                            },
                             {
                                 "id": "8890edba-a173-46b6-83dc-474cb9c66e83",
                                 "command": "EVENT_SWITCH_SCENE",
@@ -15319,7 +15354,8 @@
                                     "x": 26,
                                     "y": 23,
                                     "direction": "down",
-                                    "fadeSpeed": "2"
+                                    "fadeSpeed": "2",
+                                    "__collapse": false
                                 }
                             },
                             {
@@ -24313,7 +24349,7 @@
             "imageHeight": 144,
             "filename": "AFTER_HOURS_1.png",
             "inode": "11033750",
-            "_v": 1621842706203
+            "_v": 1621958131966
         },
         {
             "id": "2c475ddd-01f3-40d1-a339-12bc24ddc77b",
@@ -24324,7 +24360,7 @@
             "imageHeight": 144,
             "filename": "End_Screen.png",
             "inode": "11154765",
-            "_v": 1621842706203
+            "_v": 1621958131966
         },
         {
             "id": "6b135e02-410a-42a8-b644-7552d7b79d3b",
@@ -24335,7 +24371,7 @@
             "imageHeight": 256,
             "filename": "Map_Proto_1_ck.png",
             "inode": "10919959",
-            "_v": 1621842706203
+            "_v": 1621958131966
         },
         {
             "id": "ce6f5de3-5eab-4885-8b6e-9c1ffb06e858",
@@ -24346,7 +24382,7 @@
             "imageHeight": 256,
             "filename": "Map_Proto_2.png",
             "inode": "11035130",
-            "_v": 1621842706203
+            "_v": 1621958131966
         },
         {
             "id": "7ddaed7e-b767-4fb8-83bb-b8d9d2f8e0b6",
@@ -24357,7 +24393,7 @@
             "imageHeight": 144,
             "filename": "house.png",
             "inode": "10922857",
-            "_v": 1621842706203
+            "_v": 1621958131966
         },
         {
             "id": "6ce6c979-4b84-4472-81e8-e52a4b89eeca",
@@ -24368,7 +24404,7 @@
             "imageHeight": 256,
             "filename": "map01.png",
             "inode": "10882164",
-            "_v": 1621842706203
+            "_v": 1621958131966
         },
         {
             "id": "ff30e00b-2e99-493b-be7c-fdd0ce20fd9c",
@@ -24379,7 +24415,7 @@
             "imageHeight": 144,
             "filename": "titlescreen.png",
             "inode": "11034453",
-            "_v": 1621842706203
+            "_v": 1621958131966
         }
     ],
     "spriteSheets": [
@@ -24390,7 +24426,7 @@
             "type": "actor_animated",
             "filename": "Demonv1.png",
             "inode": "11027720",
-            "_v": 1621842706203
+            "_v": 1621958131966
         },
         {
             "id": "ad83be4a-89a3-45cb-8779-ad2c71b1a3a3",
@@ -24399,7 +24435,7 @@
             "type": "animated",
             "filename": "KnightBoss.png",
             "inode": "11150597",
-            "_v": 1621842706204
+            "_v": 1621958131966
         },
         {
             "id": "ec30799c-5c7d-4a51-890f-301287bc3a62",
@@ -24408,7 +24444,7 @@
             "type": "actor_animated",
             "filename": "Knightv1.png",
             "inode": "11027757",
-            "_v": 1621842706204
+            "_v": 1621958131966
         },
         {
             "id": "276c2843-c147-4eb7-987b-24d6c2837a1a",
@@ -24417,7 +24453,7 @@
             "type": "animated",
             "filename": "SwordSwingv1.png",
             "inode": "11027774",
-            "_v": 1621842706204
+            "_v": 1621958131967
         },
         {
             "id": "a7f7c768-0bc6-4ad7-b277-813cf6170ca2",
@@ -24426,7 +24462,7 @@
             "type": "actor_animated",
             "filename": "bullet.png",
             "inode": "10996185",
-            "_v": 1621842706203
+            "_v": 1621958131966
         },
         {
             "id": "8ad0e21e-5f59-4a3b-82ee-f0b8d02d7e34",
@@ -24435,7 +24471,7 @@
             "type": "actor_animated",
             "filename": "character.png",
             "inode": "10882318",
-            "_v": 1621842706203
+            "_v": 1621958131966
         },
         {
             "id": "5938d340-5079-4a52-9257-fe3ff57dab7d",
@@ -24444,7 +24480,7 @@
             "type": "actor_animated",
             "filename": "enemy01.png",
             "inode": "10882315",
-            "_v": 1621842706204
+            "_v": 1621958131966
         },
         {
             "id": "f8fe8750-6271-47b0-baa2-97ec917ee5f5",
@@ -24453,7 +24489,7 @@
             "type": "actor_animated",
             "filename": "enemy02.png",
             "inode": "10882319",
-            "_v": 1621842706203
+            "_v": 1621958131966
         },
         {
             "id": "d20a0f25-95a8-4b68-a3fe-e6e5c601d44c",
@@ -24462,7 +24498,7 @@
             "type": "actor_animated",
             "filename": "girl_v1.png",
             "inode": "10991487",
-            "_v": 1621842706203
+            "_v": 1621958131966
         },
         {
             "id": "f21b76cf-09fa-417a-819a-199f669e344b",
@@ -24471,7 +24507,7 @@
             "type": "animated",
             "filename": "sign_01.png",
             "inode": "10882316",
-            "_v": 1621842706204
+            "_v": 1621958131966
         }
     ],
     "palettes": [
@@ -24629,7 +24665,7 @@
             "filename": "song-b.mod",
             "settings": {},
             "inode": "11283816",
-            "_v": 1621843301603
+            "_v": 1621958131949
         },
         {
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
@@ -24637,7 +24673,7 @@
             "filename": "template.mod",
             "settings": {},
             "inode": "10882521",
-            "_v": 1621842706197
+            "_v": 1621958131950
         }
     ],
     "variables": [
@@ -25752,8 +25788,8 @@
         "startY": 0,
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 430,
-        "worldScrollY": 0,
+        "worldScrollX": 0,
+        "worldScrollY": 25,
         "zoom": 151.07063931185985,
         "customColorsEnabled": false,
         "defaultBackgroundPaletteIds": [
