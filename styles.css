@@ -16,7 +16,7 @@ footer{
 
 .heading-1{
     font-size: 60px;
-    margin: 50px auto 0 auto;
+    margin: 30px auto 0 auto;
 }
 
 .heading-2{
@@ -24,7 +24,7 @@ footer{
 }
 
 .heading-3{
-    font-size: 35px;
+    font-size: 33px;
 }
 
 .content{
@@ -61,6 +61,7 @@ a:active{
     text-align: center;
     font-size: 30px;
     margin: 0 10px 0 10px;
+    height: 70px;
 }
 
 hr{
@@ -101,4 +102,12 @@ hr{
 
 main{
     margin: 0 150px 0;
+}
+
+.screenshot{
+    width: 100%;
+}
+
+.demo{
+    text-decoration: underline;
 }
