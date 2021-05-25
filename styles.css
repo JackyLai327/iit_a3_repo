@@ -93,9 +93,10 @@ hr{
     font-size: 18px;
 }
 
-
 .banner{
+    min-width: 100%;
     width: 100%;
+    margin: 0 auto;
 }
 
 main{
