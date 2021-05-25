@@ -93,6 +93,11 @@ hr{
     font-size: 18px;
 }
 
+
+.banner{
+    width: 100%;
+}
+
 main{
     margin: 0 150px 0;
 }
