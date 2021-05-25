@@ -7,9 +7,6 @@ body{
     color: white;
 }
 
-main{
-    margin: 0 150px 0;
-}
 
 footer{
     font-size: 30px;
@@ -94,4 +91,8 @@ hr{
 .career{
     text-align: center;
     font-size: 18px;
+}
+
+main{
+    margin: 0 150px 0;
 }
