@@ -42,7 +42,7 @@ a, a:visited{
 }
 
 a:hover{
-    text-shadow: .1em .1em rgb(0, 0, 0);
+    text-shadow: .2em .2em rgb(0, 0, 0);
 }
 
 a:active{
@@ -91,7 +91,7 @@ hr{
 
 .career{
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .banner{
@@ -110,4 +110,21 @@ main{
 
 .demo{
     text-decoration: underline;
+}
+
+#arrow{
+    width: 100px;
+}
+
+#enter{
+    width: 100px;
+}
+
+#z, #x{
+    width: 33px;
+}
+
+.control{
+    display: flex;
+    align-items: baseline;
 }
