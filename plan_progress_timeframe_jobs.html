@@ -42,53 +42,523 @@
         </header>
 
         <main>
-            <p class="heading-1">Plan and Progress</p>
-            <p class="content">content</p>
+            <p class="heading-1">Plans and Progress</p>
+            <br>
+            <div class="plan-screenshot-container">
+                <img src="images/plan_ss_1.png" class="plan-screenshot-item">
+                <img src="images/plan_ss_2.png" class="plan-screenshot-item">
+                <img src="images/plan_ss_3.png" class="plan-screenshot-item">
+            </div>
+
+            <p class="heading-2">What Our Project Will Do</p>
+            <p class="content">Our project consists of creating a horror game that can be played on multiple devices. It is a top-down shooter game where the player shoots its enemies in order to escape and move on to the next stage. The player has a HP value which will decrease every time it takes a hit from an enemy. These enemies are zombie-like figures that approach the player from multiple directions and are littered throughout the map.</p>
+            <p class="content">We will create a fun immersive storyline where the player starts off chopping some wood, after which a branch falls and knocks the player out. When the player ‘wakes up’ in an unfamiliar part of the forest, he is surrounded by enemies determined to turn the player into a zombie. The goal is to defeat these enemies and the ‘final’ boss in order to return to the players original life which includes their home, family and kids. However, the final boss is not demonstrated in the prototype, the final map is where the guards warn the player about the final boss.</p>
+            
+            <hr>
+
+            <p class="heading-2">How To Do It</p>
+            <p class="content">Like mentioned in our goals above, the initial part of our game making process includes planning out our storyline as well as experimenting with various pixel art styles and game prototyping. This is key for the development process so as to explore modifications to make the game more appealing storyline and animation wise. Aseprite allows us to build valuable characters, objects, tools, and customize animations. Game prototyping also allows us to discover interface and mechanical problems that could arise if not addressed early on.</p>
+            <p class="content">We have decided to use GB studio which is a game boy game maker for prototyping. Due to our choice of game development software, our prototype does not contain colours, only can move in four directions. We are also unable to create our own functions or behaviours as they are pre-made and limited in the software engine itself.</p>
+            <p class="content">The main purpose of choosing to make a simple prototype is so we can make a short playable game in the short amount of time given to test out the plotline, functionalities of top-down shooter and our AI enemies. After creating the prototype, we will begin coding with C++ in Unity due to its more powerful engine and flexibility. While coding the program, we will also aim to create graphics and soundtracks if we have the time to do so. We will also add various levels to the game and create a more elaborate plotline to make it more realistic and immersive.</p>
+
+            <hr>
+
+            <p class="heading-2">How Far Have We Got</p>
+            <p class="content">We have created our prototype and it is now playable with 1 stage with 4 maps, a short storyline, established attack systems and players have a HP value. AI enemies that were created have the capacity to approach and attack the player. Players can also choose between male and female avatars. In regard to the environment, there are 4 different maps which contain enemies that look different but attack in the same way and have the same strength. Maps also have different layouts. We have also included sample background music from the internet but will aim to create our own in the 10 weeks given after this as we lack the time and expertise to create one from scratch now.</p>
+
+            <hr>
+
+            <p class="heading-2">How It Has Progressed</p>
+            <p class="content">The game developers (Nayli, Yu-Cheng and Kelvin) had to first learn how to use GB studio. GB studio is much easier than Unity with its extensive usage of C++ and hence appropriate for game prototyping at the beginning. They then created graphics such as map tilesets and character sprites, which were achieved using a licensed program called Aseprite. Aseprite was a useful tool as it was designed primarily for pixel art, as long as we had chosen the correct colour palette for our intended platform everything should run smoothly. Shooter and AI enemies are then put into pace holders where we add in functionalities. We also took note of all the issues while prototyping and searched for demonstrations and solutions online including our first stage of debugging.</p>
+
+            <hr>
+
+            <p class="heading-2">Dead Ends and Decisions</p>
+            <p class="content">There were no dead-ends per se since we merely developed a prototype, but it was challenging.</p>
+            <p class="content">Creating AI was challenging as the robots need to know when and what to do under certain circumstances. We were also limited to simple actions such as simply allowing the player to move up, down, left or right instead of detailed actions such as dodging enemies.</p>
+            <p class="content">Creating player animation and graphics is time consuming and requires skills, however we managed to create our very own unique animations using Aseprite and Tiled.</p>
+            <p class="content">A combat system requires many different features storing different values such as HP, items and such. This requires high-level Object-Oriented Programming (OOP) skills to achieve which is not within our skillset. Therefore, our prototype only incorporates simple HP values.</p>
+            <p class="content">In addition, the design process of the game is limited as GB Studio doesn’t allow a user to design the map or edit the text of the game. Initially, we had created a pixel style image which to incorporate into the game as an opening/ending screen but unfortunately GB studio does not support that function.</p>
+            
+            <img src="images/title_1.png" class="smaller_screenshot">
+            <img src="images/title_2.png" class="smaller_screenshot">
+            <p class="content"><i>images we intended to include into the game</i></p>
+
+            <p class="content">To overcome this obstacle, we decided to use a different software, Tiled to create a map for the game.</p>
+            <p class="content">Due to the simplicity of GB studio, movement of the player is limited to 4 directions, and we were unable to apply the player status bar on the top screen. It was also very difficult to create and edit the game together using GB studio as collaboration is not a function. Therefore, we split off into our own tasks to add into the game.</p>
 
             <hr>
 
             <p class="heading-1">Time Frame</p>
-            <p class="content">content</p>
+            <p class="heading-2">Assignment</p>
+            <table class="time-frame">
+                <tr>
+                    <th></th>
+                    <th>Week 10/5/21</th>
+                    <th>Week 17/5/21</th>
+                    <th>Week 24/5/21</th>
+                </tr>
+                <tr>
+                    <td class="first-column">
+                        <p class="content">Nayli</p>
+                        <p class="content">(14 hours)</p>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>
+                                <p class="content">Rephrase personal introduction</p>
+                            </li>
+                            <li>
+                                <p class="content">Start on game prototype</p>
+                            </li>
+                            <li>
+                                <p class="content">Brainstorm aims</p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>
+                                <p class="content">Prototype making</p>
+                            </li>
+                            <li>
+                                <p class="content">Brainstorming title screens</p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>
+                                <p class="content">Design title screens</p>
+                            </li>
+                            <li>
+                                <p class="content">Complete reflection</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="first-column">
+                        <p class="content">Melanie</p>
+                        <p class="content">(25 hours)</p>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>
+                                <p class="content">Rephrase personal introduction</p>
+                            </li>
+                            <li>
+                                <p class="content">Complete group processes and communications</p>
+                            </li>
+                            <li>
+                                <p class="content">Complete job description of Software debug engineer</p>
+                            </li>
+                            <li>
+                                <p class="content">Brainstorm aims</p>
+                            </li>
+                            <li>
+                                <p class="content">Assigning tasks to members to meet deadline</p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>
+                                <p class="content">Complete group processes & career plans under team profile</p>
+                            </li>
+                            <li>
+                                <p class="content">Elaborate on aims & goals</p>
+                            </li>
+                            <li>
+                                <p class="content">Assigning tasks to members</p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>
+                                <p class="content">Convert project related dot points into paragraphs</p>
+                            </li>
+                            <li>
+                                <p class="content">Complete reflection</p>
+                            </li>
+                            <li>
+                                <p class="content">Edit spelling, grammar, phrasing mistakes for whole report</p>
+                            </li>
+                            <li>
+                                <p class="content">Format report</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="first-column">
+                        <p class="content">ShuYun</p>
+                        <p class="content">(2 hours)</p>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>
+                                <p class="content">Rephrase personal introduction</p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>
+                                <p class="content">Complete job description of Game developer</p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>
+                                <p class="content">Complete reflection</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="first-column">
+                        <p class="content">Chansouda</p>
+                        <p class="content">(10 hours)</p>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>
+                                <p class="content">Rephrase personal introduction</p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>
+                                <p class="content">Brainstorm aims</p>
+                            </li>
+                            <li>
+                                <p class="content">Complete job description of Game animator and Digital marketing analyst</p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>
+                                <p class="content">Elaborate on the goals and risks</p>
+                            </li>
+                            <li>
+                                <p class="content">Complete reflection</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="first-column">
+                        <p class="content">Kelvin</p>
+                        <p class="content">(18 hors)</p>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>
+                                <p class="content">Rephrase personal introduction</p>
+                            </li>
+                            <li>
+                                <p class="content">Start on game prototype</p>
+                            </li>
+                            <li>
+                                <p class="content">Brainstorm aims</p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>
+                                <p class="content">Asset acquisition for map making</p>
+                            </li>
+                            <li>
+                                <p class="content">Assembling multiple maps Downloading and using Aseprite</p>
+                            </li>
+                            <li>
+                                <p class="content">Utilizing Aseprite to create playable character sprites with animations</p>
+                            </li>
+                            <li>
+                                <p class="content">Creating enemy units</p>
+                            </li>
+                            <li>
+                                <p class="content">Creating enemy attack animations</p>
+                            </li>
+                            <li>
+                                <p class="content">Creating extra assets required for map design</p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>
+                                <p class="content">Complete reflection</p>
+                            </li>
+                            <li>
+                                <p class="content">Touch up and elaborate further regarding asset creation tools</p>
+                            </li>
+                            <li>
+                                <p class="content">Add on to paragraphs in regard to game making</p>
+                            </li>
+                            <li>
+                                <p class="content">Proofread and add onto game making procedures.</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="first-column">
+                        <p class="content">Yu-Cheng</p>
+                        <p class="content">(20 hours)</p>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>
+                                <p class="content">Rephrase personal introduction</p>
+                            </li>
+                            <li>
+                                <p class="content">Start on game prototype</p>
+                            </li>
+                            <li>
+                                <p class="content">Figure out how to test project</p>
+                            </li>
+                            <li>
+                                <p class="content">Brainstorm aims</p>
+                            </li>
+                            <li>
+                                <p class="content">Organising meeting records</p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>
+                                <p class="content">Prototype making</p>
+                            </li>
+                            <li>
+                                <p class="content">Organising meeting records</p>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>
+                                <p class="content">Website structuring</p>
+                            </li>
+                            <li>
+                                <p class="content">Complete reflection</p>
+                            </li>
+                            <li>
+                                <p class="content">Transferring contents from report to website</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+
+            <p class="heading-2">Ten-Week Plan</p>
+            <table class="time-frame">
+                <tr>
+                    <th></th>
+                    <th>Tasks</th>
+                </tr>
+                <tr>
+                    <td class="first-column">Week 1</td>
+                    <td>Familiarise the team with the UNITY engine. UNITY is a more powerful engine with less restrictions and allows us to create more specific and detailed functions.</td>
+                </tr>
+                <tr>
+                    <td class="first-column">Week 2</td>
+                    <td>Learn to polish up assets and remake assets with full colour scale for the UNITY engine. This will also require adding additional frames of movement and orientation for refined play control, for both player and NPC/enemies.</td>
+                </tr>
+                <tr>
+                    <td class="first-column">Week 3</td>
+                    <td>Consult the team to storyboard the direction of the game; to come up with a more comprehensive and engaging storyline and plot.</td>
+                </tr>
+                <tr>
+                    <td class="first-column">Week 4</td>
+                    <td>Sound effects and soundtrack creation, we will create our own. Music and auditory cues are important tools for manipulating emotion and creating a narrative to create a more interactive and immersive experience in games.</td>
+                </tr>
+                <tr>
+                    <td class="first-column">Week 5</td>
+                    <td>Learn the code required to allow for fine-tuned player controls, a multitude of tutorials and learning tools available to achieve this.</td>
+                </tr>
+                <tr>
+                    <td class="first-column">Week 6</td>
+                    <td>Begin assembly of maps and environmental details, add collision to terrain. We will still use Tiled in conjunction with Unity’s map creation kit as Tiled is more flexible in its capabilities.</td>
+                </tr>
+                <tr>
+                    <td class="first-column">Week 7</td>
+                    <td>Begin construction and assembly of the game on the UNITY engine by using all of the assets that we have created with the weeks leading up to this point, adding anything extra that we come up with while doing so.</td>
+                </tr>
+                <tr>
+                    <td class="first-column">Week 8</td>
+                    <td>Begin bug testing internally as we continue working on the game, we will attempt to play the game ‘incorrectly’ and attempt to skip parts to see if there are any game ending glitches to do with scene sequencing etc.</td>
+                </tr>
+                <tr>
+                    <td class="first-column">Week 9</td>
+                    <td>Release an alpha version of the product to allow for more player feedback and bug squashing.</td>
+                </tr>
+                <tr>
+                    <td class="first-column">Week 10</td>
+                    <td>We will then take into account the feedback of players to make any further improvements to the game, and then release it.</td>
+                </tr>
+            </table>
 
             <hr>
 
             <p class="heading-1">Skills and Jobs</p>
-            <p class="content">content</p>
-
-            <hr>
 
             <p class="heading-2">Game Developer</p>
-            <p class="content">content</p>
-            <p class="heading-3">Responsibilities</p>
-            <p class="content">content</p>
-            <p class="heading-3">Key Qualification</p>
-            <p class="content">content</p>
+            <p class="content">Game developers work on the design, development, debugging and other technical support of the game architecture and major functions.</p>
+            <p class="heading-3">Responsibilities:</p>
+            <ul>
+                <li>
+                    <p class="content">Investigate reported bugs and provide reproducible steps to the team</p>
+                </li>
+                <li>
+                    <p class="content">Work with programmers and artists to prioritize areas of change in your test plans</p>
+                </li>
+                <li>
+                    <p class="content">Setup and maintain multiple test devices, including PCs, mobile phones and consoles</p>
+                </li>
+                <li>
+                    <p class="content">Communicate found issues to team members, including identifying potential defect owners</p>
+                </li>
+                <li>
+                    <p class="content">Effectively evaluate and communicate defect severity and potential impact</p>
+                </li>
+            </ul>
+            <p class="heading-3">Key Qualifications:</p>
+            <ul>
+                <li>
+                    <p class="content">Excellent written and verbal communication skills</p>
+                </li>
+                <li>
+                    <p class="content">Ability to discover and precisely communicate steps to reproduce issues</p>
+                </li>
+                <li>
+                    <p class="content">Knowledge of games and game industry trends</p>
+                </li>
+                <li>
+                    <p class="content">Bachelor's degree is preferred</p>
+                </li>
+                <li>
+                    <p class="content">Experience testing one or more games in a professional environment is a plus</p>
+                </li>
+                <li>
+                    <p class="content">Relevant certification in programming languages</p>
+                </li>
+            </ul>
 
-            <hr>
-
-            <p class="heading-2">Graphic Designer</p>
-            <p class="content">content</p>
-            <p class="heading-3">Responsibilities</p>
-            <p class="content">content</p>
-            <p class="heading-3">Key Qualification</p>
-            <p class="content">content</p>
-
-            <hr>
+            <p class="heading-2">Graphic Animator</p>
+            <p class="content">We are seeking employees that are experts of design, and creating 2D and 3D images of characters, background, accessories, and other objectives that will be included in our future game project.</p>
+            <p class="heading-3">Responsibilities:</p>
+            <ul>
+                <li>
+                    <p class="content">Designing and producing top-quality animations</p>
+                </li>
+                <li>
+                    <p class="content">Researching video game animation trends, techniques, and statistics</p>
+                </li>
+                <li>
+                    <p class="content">Work in a highly collaborative environment to fully realize our characters and environments through movement</p>
+                </li>
+            </ul>
+            <p class="heading-3">Key Qualifications:</p>
+            <ul>
+                <li>
+                    <p class="content">Bachelor's degree in computer art and/or animation</p>
+                </li>
+                <li>
+                    <p class="content">Good understanding of video game development and the art-creation process</p>
+                </li>
+                <li>
+                    <p class="content">Exceptional communication and teamwork skills</p>
+                </li>
+                <li>
+                    <p class="content">A creative eye for art direction and video game special effects</p>
+                </li>
+                <li>
+                    <p class="content">Relevant certification in programming languages</p>
+                </li>
+            </ul>
 
             <p class="heading-2">Digital Marketing Analyst</p>
-            <p class="content">content</p>
-            <p class="heading-3">Responsibilities</p>
-            <p class="content">content</p>
-            <p class="heading-3">Key Qualification</p>
-            <p class="content">content</p>
+            <p class="content">We are looking for a digital marketing analyst that has a good understanding of the gaming industry, market and target audiences.</p>
+            <p class="heading-3">Responsibilities:</p>
+            <ul>
+                <li>
+                    <p class="content">Track online game marketing patterns</p>
+                </li>
+                <li>
+                    <p class="content">Designing campaign strategies</p>
+                </li>
+                <li>
+                    <p class="content">Collect & analyse data for marketing</p>
+                </li>
+                <li>
+                    <p class="content">Communicate with clients</p>
+                </li>
+            </ul>
+            <p class="heading-3">Key Qualifications:</p>
+            <ul>
+                <li>
+                    <p class="content">Degree in digital marketing</p>
+                </li>
+                <li>
+                    <p class="content">Knowledge of games and game industry trends</p>
+                </li>
+                <li>
+                    <p class="content">Understanding of digital marketing analysis</p>
+                </li>
+                <li>
+                    <p class="content">Great communication skills to team members and clients to present digital marketing strategies</p>
+                </li>
+                <li>
+                    <p class="content">Social media skills to promote our game</p>
+                </li>
+            </ul>
 
-            <hr>
             <p class="heading-2">Software Debug Engineer</p>
-            <p class="content">content</p>
-            <p class="heading-3">Responsibilities</p>
-            <p class="content">content</p>
-            <p class="heading-3">Key Qualification</p>
-            <p class="content">content</p>
+            <p class="content">Debugging is twice as hard as writing the code in the first place. We are seeking a Software debug engineer who has the passion for software debug, a background in application software development and who wants to learn and develop their skills.</p>
+            <p class="heading-3">Responsibilities:</p>
+            <ul>
+                <li>
+                    <p class="content">Debug and root cause software issues and determine if there are any hardware issues preventing the software from operating as expected</p>
+                </li>
+                <li>
+                    <p class="content">Design, develop and sustain debug scripts and diagnostic software</p>
+                </li>
+                <li>
+                    <p class="content">Drive changes in software design to help create a most robust and user-friendly software stack</p>
+                </li>
+                <li>
+                    <p class="content">Perform code reviews and suggest new optimized code</p>
+                </li>
+            </ul>
+            <p class="heading-3">Key Qualifications:</p>
+            <ul>
+                <li>
+                    <p class="content">Bachelor’s degree or equivalent experience in computer science or a related field</p>
+                </li>
+                <li>
+                    <p class="content">Proficiency in C++ development</p>
+                </li>
+                <li>
+                    <p class="content">Understand the hardware and software architecture of the product</p>
+                </li>
+                <li>
+                    <p class="content">Strong written, verbal and presentation skills for expressing complex ideas and initiatives to audiences of varied technical skills</p>
+                </li>
+                <li>
+                    <p class="content">Passion for crafting software and tools</p>
+                </li>
+                <li>
+                    <p class="content">Positive and respectful attitude in a diverse team environment as well as independently</p>
+                </li>
+            </ul>
         </main>
 
         <footer>

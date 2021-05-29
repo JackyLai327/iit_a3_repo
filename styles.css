@@ -128,3 +128,67 @@ main{
     display: flex;
     align-items: baseline;
 }
+
+.smaller_screenshot{
+    width: 60%;
+    margin-left: 20%;
+}
+
+.vertical-screenshot{
+    width: 60%;
+    margin-left: 20%;
+}
+
+.vertical{
+    font-size: 25px;
+    text-align: center;
+}
+
+.plan-screenshot-container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3%;
+}
+
+.plan-screenshot-item{
+    width: 30%;
+}
+
+.MS-table{
+    border-collapse: collapse;
+    font-size: 20px;
+}
+
+.MS-table th{
+    background-color: rgb(63, 99, 58);
+    font-weight: bold;
+}
+
+.MS-table td{
+    padding: 12px 5px;
+}
+
+.time-frame{
+    border-collapse: collapse;
+    font-size: 25px;
+}
+
+.time-frame td, .time-frame th{
+    border-bottom: 1px white solid;
+    border-right: 1px white solid;
+}
+
+.time-frame td{
+    vertical-align: top;
+    padding: 10px;
+}
+
+.time-frame th, .first-column{
+    background-color: rgb(63, 99, 58);
+    font-weight: bold;
+}
+
+.first-column{
+    width: 100px;
+    text-align: center;
+}
