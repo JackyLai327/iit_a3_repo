@@ -152,6 +152,7 @@ main{
 
 .plan-screenshot-item{
     width: 30%;
+    height: auto;
 }
 
 .MS-table{
